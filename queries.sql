@@ -111,3 +111,33 @@ SELECT species, MIN(weight_kg), MAX(weight_kg) from animals GROUP BY species;
 -- What is the average number of escape attempts per animal type of those born between 1990 and 2000?
 
 SELECT species, AVG(escape_attempts) from animals WHERE date_part('year', date_of_birth) > 1990 and date_part('year', date_of_birth) < 2000 GROUP BY species;
+
+
+-- What animals belong to Melody Pond?
+
+SELECT a.name, b.full_name from animals as a, owners as b WHERE a.owner_id = b.id and b.full_name = 'Melody Pond';
+
+-- List of all animals that are pokemon (their type is Pokemon).
+
+SELECT a.name, b.name as specises from animals as a, species as b WHERE a.species_id = b.id and b.name = 'Pokemon';
+-- List all owners and their animals, remember to include those that don't own any animal.
+
+SELECT b.full_name as ownerName ,a.name as petName  from animals as a RIGHT JOIN owners as b ON a.owner_id = b.id;
+
+-- How many animals are there per species?
+
+SELECT species_id, COUNT(*) from animals GROUP BY species_id;
+
+
+-- List all Digimon owned by Jennifer Orwell.
+
+SELECT a.name, b.full_name from animals as a, owners as b, species as c WHERE a.owner_id = b.id and a.species_id = c.id and b.full_name = 'Jennifer Orwell' and c.name = 'Digimon';
+
+-- List all animals owned by Dean Winchester that haven't tried to escape.
+
+SELECT a.name, b.full_name from animals as a, owners as b, species as c 
+WHERE a.owner_id = b.id and a.species_id = c.id and b.full_name = 'Dean Winchester' and a.escape_attempts = 0;
+
+-- Who owns the most animals?
+
+SELECT b.full_name, COUNT(*) from animals as a, owners as b WHERE a.owner_id = b.id GROUP BY b.full_name ORDER BY COUNT(*) DESC LIMIT 1;
