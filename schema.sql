@@ -8,3 +8,6 @@ Create table animals (
 	neutered BOOLEAN,
 	weight_kg decimal
 )
+
+ALTER TABLE animals
+ADD species Text;
