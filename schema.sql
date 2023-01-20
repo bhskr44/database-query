@@ -62,3 +62,19 @@ DROP TABLE animals;
 
 ALTER TABLE new_animals RENAME TO animals;
 
+-- Create a table named vets with the following columns:
+-- id: integer (set it as autoincremented PRIMARY KEY)
+-- name: string
+-- age: integer
+-- date_of_graduation: date 
+CREATE TABLE vets (
+    id SERIAL PRIMARY KEY,
+    name varchar(255),
+    age INT,
+    date_of_graduation DATE
+);
+
+
+
+
+
