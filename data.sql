@@ -51,6 +51,11 @@ SET species_id = 1
 WHERE name NOT LIKE '%mon';
 
 
+UPDATE animals
+SET species_id = 2
+WHERE name LIKE '%mon';
+
+
 -- Modify your inserted animals to include owner information (owner_id):
 -- Sam Smith owns Agumon.
 UPDATE animals

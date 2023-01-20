@@ -19,7 +19,7 @@ ADD species Text;
 -- age: integer
 
 CREATE TABLE owners (
-	id integer,
+	 id SERIAL PRIMARY KEY,
 	full_name varchar,
 	age integer
 )
@@ -32,7 +32,7 @@ CREATE TABLE owners (
 
 
 CREATE TABLE species (
-	id integer,
+ 	id SERIAL PRIMARY KEY,
 	name varchar
 )
 
