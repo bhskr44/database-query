@@ -47,11 +47,6 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> - [Live Demo Link](#)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -123,6 +118,11 @@ Example command:
 - Twitter: [@bhskr44](https://twitter.com/bhskr44)
 - LinkedIn: [@bhskr44](https://linkedin.com/in/bhskr44)
 
+👤 **Linus Shaddai**
+
+- GitHub: [@linushaddai99](https://github.com/@linushaddai99)
+- Twitter: [@ShaddaiLinus](https://twitter.com/@ShaddaiLinus)
+- LinkedIn: [linusshaddai](https://www.linkedin.com/in/linusshaddai/)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
