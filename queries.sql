@@ -141,3 +141,5 @@ WHERE a.owner_id = b.id and a.species_id = c.id and b.full_name = 'Dean Winchest
 -- Who owns the most animals?
 
 SELECT b.full_name, COUNT(*) from animals as a, owners as b WHERE a.owner_id = b.id GROUP BY b.full_name ORDER BY COUNT(*) DESC LIMIT 1;
+
+

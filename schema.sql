@@ -62,3 +62,5 @@ DROP TABLE animals;
 
 ALTER TABLE new_animals RENAME TO animals;
 
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
